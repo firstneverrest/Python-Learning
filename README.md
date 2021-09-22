@@ -25,7 +25,7 @@ python --version
 - case-sensitive
 - no semicolon
 
-## Multiple items Data Type
+### Multiple items Data Type
 
 ```py
 # List - ordered, changeable, allow duplicate members, allow multiple data types
@@ -44,7 +44,7 @@ myDict = {
 }
 ```
 
-# Condition
+### Condition
 
 ```py
 a = 200
@@ -60,7 +60,7 @@ else:
 print("a") if a > b else print("b")
 ```
 
-# Loop
+### Loop
 
 ```py
 # While Loop
@@ -79,7 +79,7 @@ for x in fruits:
   print(x)
 ```
 
-# Function
+### Function
 
 ```py
 def showName(name):
@@ -88,7 +88,7 @@ def showName(name):
 showName("Smith")
 ```
 
-# Classes, Objects and Methods
+### Classes, Objects and Methods
 
 ```py
 # defines class
@@ -109,7 +109,7 @@ print(p1.age)
 p1.showName()
 ```
 
-# Inheritance
+### Inheritance
 
 ```py
 class Person:
@@ -132,7 +132,7 @@ x = Student("Mike", "Olsen", 2019)
 x.welcome()
 ```
 
-# import
+### import
 
 ```py
 # age.py
@@ -146,7 +146,7 @@ person = age.show_age(24)
 print(person)
 ```
 
-# JSON
+### JSON
 
 ```py
 # Convert JSON to Dict
@@ -180,9 +180,11 @@ y = json.dumps(x)
 print(y)
 ```
 
-# Python Packages/Libraries/Modules
+### Python Packages/Libraries/Modules
 
 - pip - package manager for Python packages which enable download other Python packages
 - json - convert JSON to Dict and vice versa
 - datetime - date
 - re - regular expression
+
+## Django (Web Application)

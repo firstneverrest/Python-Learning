@@ -49,6 +49,7 @@ Virtualenv is a tool to create isolated Python environments which solve the diff
 
    ```
    django-admin startproject <project_name>
+   cd <project_name>
    ```
 
    Tip: project name need to be snake case like django_project
