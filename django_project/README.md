@@ -61,6 +61,19 @@ Virtualenv is a tool to create isolated Python environments which solve the diff
 
 ## Folder Structure
 
+- `manage.py` - script file for running Django command such as run server, collectstatic and model & migration.
+- `__init__.py` - initial file for storing Python package. You can add other script file into this file.
+- `settings.py` - config project such as path, database, etc.
+- `urls.py` - store routing of HTTP request to define Django project's url pattern
+- `wsgi.py` - Web Server Gateway Interface (WSGI) describes the way how servers interact with the applications in production environment. The task is to import middleware according to the server.
+- `asgi.py` - Asynchronous Server Gateway Interface (ASGI) is similar to WSGI but has more additional functionality.
+
+## MVT (Model-View-Template)
+
+- Model - communicate with database
+- View - work as a controller like processing data and command and send to template
+- Template - the application UI
+
 ## Reference
 
 - [ปูพื้นฐานการพัฒนา Web Application ภาษา Python ด้วย Django Framework](https://kongruksiamza.medium.com/ปูพื้นฐานการพัฒนา-web-application-กับภาษา-python-ด้วย-django-framework-9d3b7f48718a)
