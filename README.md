@@ -1,5 +1,7 @@
 # Python Learning
 
+Python is a interpreted high-level programming language. Python is easy to learn and can do various tasks: Web Application, AI & Machine Learning, Data Analytics, etc.
+
 ## Python Installation and Setup for VSCode
 
 1. Open [Python official website](https://www.python.org/).
