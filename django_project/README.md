@@ -70,9 +70,23 @@ Virtualenv is a tool to create isolated Python environments which solve the diff
 
 ## MVT (Model-View-Template)
 
+Django use MVT architecture for development.
+
 - Model - communicate with database
 - View - work as a controller like processing data and command and send to template
 - Template - the application UI
+
+## Create app inside Django
+
+1. Create an app
+
+```
+python manage.py startapp blogs
+```
+
+2. Then you could see MVT architecture like models.py, views.py, etc.
+3. In settings.py, add app name
+4.
 
 ## Reference
 
