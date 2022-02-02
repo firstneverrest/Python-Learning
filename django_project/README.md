@@ -78,15 +78,11 @@ Django use MVT architecture for development.
 
 ## Create app inside Django
 
-1. Create an app
-
 ```
 python manage.py startapp blogs
 ```
 
-2. Then you could see MVT architecture like models.py, views.py, etc.
-3. In settings.py, add app name
-4.
+Then, you can add HTML, CSS and JavaScript in templates folder in your new app.
 
 ## Reference
 
