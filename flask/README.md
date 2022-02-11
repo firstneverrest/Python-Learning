@@ -6,6 +6,8 @@ Flask is a micro web framework written in Python. It does not require particular
 
 ```
 pip install Flask
+
+python app.py
 ```
 
 ## Create web server
@@ -22,4 +24,23 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+```
+
+## Dynamic Routing
+
+```py
+@app.route('/user/<username>')
+def user(username):
+    return '<b>User: {} </b>'.format(username)
+
+```
+
+## Debug mode
+
+In default mode, debug mode is off to prevent other users see server code. Therefore, if some mistake occur, the user would see 500 internal error. However, you can turn it on when you are developing flask server. Debug mode helps logging error message to make you more understand about the error instead of 500 internal error message.
+
+```py
+# app.py
+if __name__ == '__main__':
+    app.run(debug=True)
 ```
