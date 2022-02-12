@@ -1,18 +1,29 @@
-from flask import Flask
+from django.shortcuts import render
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index(): 
-    return '<h1>Hello World!</h1>'
+    return render_template('index.html')
 
 @app.route('/about')
 def about(): 
-    return '<h1>About me</h1>'
+    return render_template('about.html')
 
-@app.route('/user/<username>')
-def user(username):
-    return '<b>User: {} </b>'.format(username)
+@app.route('/blog/<username>')
+def blog(username):
+    blogs = [
+        {
+            "title": "Cryptocurrency in the future",
+            "author": "Chitsanupong",
+        },
+        {
+            "title": "How to build a blockchain",
+            "author": "Chitsanupong",
+        }
+    ]
+    return render_template('blog.html', username=username, blogs=blogs)
 
 if __name__ == '__main__':
     app.run()
