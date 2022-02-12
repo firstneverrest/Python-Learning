@@ -1,0 +1,16 @@
+.blog-description {
+  margin-top: 1rem;
+}
+
+.items-container {
+  margin: 16px 0;
+}
+
+.items-container li {
+  font-weight: 600;
+  list-style: disc inside;
+}
+
+.items-container > li:not(:last-child) {
+  margin-bottom: 8px;
+}

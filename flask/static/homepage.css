@@ -1,0 +1,7 @@
+.items-container {
+  margin: 16px 0;
+}
+
+.items-container > li:not(:last-child) {
+  margin-bottom: 8px;
+}
