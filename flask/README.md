@@ -44,3 +44,55 @@ In default mode, debug mode is off to prevent other users see server code. There
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+
+## Template
+
+Template is a user interface of your application including HTML. Jinja2 template is a template for Flask framework that enable inserting Python code in HTML.
+
+## Send data to template
+
+```py
+# app.py
+@app.route('/blog/<username>')
+def blog(username):
+    blogs = [
+        {
+            "title": "Cryptocurrency in the future",
+            "author": "Chitsanupong",
+        },
+        {
+            "title": "How to build a blockchain",
+            "author": "Chitsanupong",
+        }
+    ]
+    return render_template('blog.html', username=username, blogs=blogs)
+
+```
+
+```html
+# blog.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <link rel="stylesheet" href="../static/blog.css" />
+    <title>Flask</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Blog</h1>
+      <p class="blog-description">These are blogs from {{username}}</p>
+      <ul class="items-container">
+        {% for blog in blogs %}
+        <li>
+          {{blog.title}} : {{blog.author}}
+        </li>
+        {% endfor %}
+    </div>
+  </body>
+</html>
+
+```
