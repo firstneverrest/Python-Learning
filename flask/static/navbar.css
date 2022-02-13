@@ -1,0 +1,7 @@
+.navbar {
+  display: flex;
+}
+
+.navbar a:not(:last-child) {
+  margin-right: 2.4rem;
+}

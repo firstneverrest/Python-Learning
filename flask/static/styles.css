@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import 'about.css';
+@import 'blog.css';
+@import 'homepage.css';
+@import 'navbar.css';
 
 * {
   padding: 0;
@@ -42,9 +46,12 @@ li {
 }
 
 .container {
-  display: grid;
-  place-content: center;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 2rem;
+  width: 600px;
 }
 
 a {
@@ -60,4 +67,52 @@ a:hover {
 
 ul li {
   list-style: none;
+}
+
+.my-8 {
+  margin: 8px 0;
+}
+
+.my-16 {
+  margin: 16px 0;
+}
+
+.mx-8 {
+  margin: 0 8px;
+}
+
+.mx-16 {
+  margin: 0 16px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
