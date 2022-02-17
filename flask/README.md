@@ -127,3 +127,37 @@ def blog(username):
   </body>
 </html>
 ```
+
+## Template Inheritance
+
+Template inheritance is a powerful part of Jinja which allows you to build base skeleton template contained all the common elements of your site.
+
+```html
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is my first Flask project." />
+    <meta name="keywords" content="Flask Python" />
+    <meta name="author" content="Chitsanupong Tangvasinkul" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <title>Flask</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar mb-16">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog/chitsanupong">Blog</a>
+      </nav>
+      <!-- add this line below -->
+      <main>{% block content %}{% endblock %}</main>
+    </div>
+  </body>
+</html>
+```
+
+## url_for()
